@@ -1,0 +1,9 @@
+# DSH bundle patch: 挂载 QQ 对话者插件。
+# 安装：
+#   dsh plugin --profile web add link:D:\path\to\dsh-qq-persona
+#   （或发布后用包名 add）
+- insert:
+    - id: qq-persona
+      name: dsh-qq-persona
+      config:
+        enabled: true

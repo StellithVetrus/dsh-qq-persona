@@ -1,0 +1,57 @@
+{
+    "name":  "dsh-qq-persona",
+    "version":  "0.1.1",
+    "description":  "DSH plugin: run a QQ companion bridge with a user-defined persona.",
+    "type":  "module",
+    "main":  "index.js",
+    "exports":  {
+                    ".":  "./index.js",
+                    "./client":  "./client.js",
+                    "./package.json":  "./package.json"
+                },
+    "files":  [
+                  "index.js",
+                  "client.js",
+                  "cordis.patch.yml",
+                  "bridge",
+                  "config",
+                  "personas",
+                  "scripts",
+                  "docs",
+                  "install.ps1",
+                  "README.md",
+                  "REVIEW.md",
+                  "LICENSE",
+                  "NOTICE"
+              ],
+    "engines":  {
+                    "dsh":  "\u003e=0.1.7-rc.1",
+                    "node":  "\u003e=22"
+                },
+    "peerDependencies":  {
+                             "@deepseek-ai/dsh-tools":  "*",
+                             "@deepseek-ai/schemastery":  "*"
+                         },
+    "peerDependenciesMeta":  {
+                                 "@deepseek-ai/dsh-tools":  {
+                                                                "optional":  true
+                                                            },
+                                 "@deepseek-ai/schemastery":  {
+                                                                  "optional":  true
+                                                              }
+                             },
+    "dsh":  {
+                "bundle":  {
+                               "patch":  "./cordis.patch.yml"
+                           },
+                "client":  {
+                               "platform":  "web",
+                               "inject":  [
+                                              "@deepseek-ai/dsh-client-runtime",
+                                              "@deepseek-ai/dsh-client-ui-settings",
+                                              "@deepseek-ai/dsh-client-ui-settings-plugins"
+                                          ]
+                           }
+            },
+    "license":  "MIT"
+}

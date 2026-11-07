@@ -1,0 +1,26 @@
+# runtime and private data
+bridge/node_modules/
+bridge/config.json
+bridge/state/
+bridge/audio/
+bridge/roles/*.md
+!bridge/roles/README.md
+bridge/.env
+data/
+logs/
+*.log
+*.bak
+*.bak-*
+
+# optional personal assets
+voice/
+models/
+*.wav
+*.mp3
+*.pth
+*.ckpt
+*.safetensors
+
+# OS
+Thumbs.db
+.DS_Store

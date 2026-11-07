@@ -1,0 +1,7 @@
+﻿NOTICE
+======
+This project includes a fork/copy of qq-bridge, licensed under the MIT License.
+Upstream: https://github.com/Derpyu520/qq-bridge
+
+DeepSeek Harness, SnowLuma and other third-party components are not bundled
+and remain under their own licenses.
